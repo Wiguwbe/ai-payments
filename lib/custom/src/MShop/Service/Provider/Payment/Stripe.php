@@ -2,7 +2,7 @@
 
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package MShop
  * @subpackage Service
  */
@@ -84,8 +84,8 @@ class Stripe
 			'public' => false,
 		),
 
-		'payment.cardno' => array(
-			'code' => 'payment.cardno',
+		'payment-cardno' => array(
+			'code' => 'payment-cardno',
 			'internalcode'=> 'number',
 			'label'=> 'Credit card number',
 			'type'=> 'number',
@@ -93,8 +93,8 @@ class Stripe
 			'default'=> '',
 			'required'=> false
 		),
-		'payment.expiry' => array(
-			'code' => 'payment.expiry',
+		'payment-expiry' => array(
+			'code' => 'payment-expiry',
 			'internalcode'=> 'expiry',
 			'label'=> 'Expiry',
 			'type'=> 'select',
@@ -102,8 +102,8 @@ class Stripe
 			'default'=> '',
 			'required'=> false
 		),
-		'payment.cvv' => array(
-			'code' => 'payment.cvv',
+		'payment-cvv' => array(
+			'code' => 'payment-cvv',
 			'internalcode'=> 'cvv',
 			'label'=> 'Verification number',
 			'type'=> 'number',
